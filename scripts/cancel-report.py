@@ -1147,7 +1147,7 @@ def send_email(csv_file):
     
     # Email details
     sender_email = os.getenv("SMTP_SENDER_EMAIL")
-    subject = 'Daily Cancels Report - Shows Previous day data'
+    subject = '[AUTOMATED] Daily Cancels Report - Shows Previous day data'
     body = 'Please find attached the daily cancel report.'
     smtp_server = os.getenv("SMTP_SERVER")
     smtp_port = int(os.getenv("SMTP_PORT"))
